@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800;900&display=swap');
+
+//variables and declarations
+@backgroundcolor: #f2f2f2;
+@purplegrey: #666ca3;
+@darkblueish: #13183f;
+@grey: #838698;
+@brightpink: #f74780;
+@palepink: #ffa7c3;
+@white: #ffffff;
+
+.gradient-one () {
+  background: linear-gradient(to top, #f02aa6, #ff6f48);
+}
+
+.gradient-two () {
+  background: linear-gradient(to bottom, #4851ff, #f02aa6);
+}
+
+.std-radius () {
+  border-radius: 15px;
+}
+
+.btn-radius () {
+  border-radius: 28px;
+}
+
+
+//general styling
+
+body {
+  background-color: @backgroundcolor;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 18px;
+  color: @grey;
+}
+
+a {
+  color: @brightpink;
+  text-decoration: none;
+
+  &:hover {
+    color: @darkblueish;
+  }
+}
+
+//header styling
+.header {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hdr-img {
+  display: block;
+  height: 1rem;
+  width: auto;
+}
+
+.hdr-btn {
+  background-color: @darkblueish;
+  color: @white;
+  padding: 0.5rem 1rem;
+  .btn-radius();
+  border: none;
+}
+
+//main content styling
+.top {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  line-height: 1.8rem;
+}
+
+.top-h1 {
+  font-size: 2.7rem;
+  font-weight: 800;
+  line-height: 2.4rem;
+  color: @darkblueish;
+}
+
+.top-para {
+  font-size: 0.98rem;
+  font-weight: 400;
+}
+
+.top-btn {
+  width: 10rem;
+  padding: 1rem 0;
+  border: none;
+  .gradient-one();
+  color: @white;
+  .btn-radius();
+  font-weight: 600;
+}
+
+//features grid
+.features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  gap: 2.2rem;
+}
+
+.features-item {
+  padding: 0.9rem;
+  background-color: @white;
+  width: 80%;
+  margin: auto;
+}
+
+.callout {
+  .gradient-one();
+  color: @white;
+}
+
+
+//footer styling
+.footer {
+  background-color: @darkblueish;
+  background-attachment: fixed;
+  color: @white;
+  padding: 1rem;
+}
+
+.skilled-ftr {
+  margin: 0 0.025rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ftr-img {
+  height: 1rem;
+  width: auto;
+}
+
+.ftr-btn {
+  border: none;
+  .gradient-two();
+  color: @white;
+  padding: 0.5rem 1rem;
+  .btn-radius();
+}
+
+.fm-ftr {
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 0.6rem;
+}
